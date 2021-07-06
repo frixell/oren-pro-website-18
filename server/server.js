@@ -23,9 +23,9 @@ app.use(function forceHTTPS(req, res, next) {
   console.log(schema);
   console.log(www);
  //  || www.indexOf('www') < 0
-  if (schema !== 'https') {
-    return res.redirect('https://oren-pro-website-18.herokuapp.com/' + local);
-  }
+  // if (schema !== 'https') {
+  //   return res.redirect('https://oren-pro-website-18.herokuapp.com/' + local);
+  // }
 
   return next();
 
@@ -664,6 +664,8 @@ admin.initializeApp({
   }),
   databaseURL: process.env.FIREBASE_DATABASE_URL
 });
+
+
 
 
 // sitemap.xml
